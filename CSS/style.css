@@ -102,9 +102,12 @@ nav a{
     color: #757575;
 } 
 
+.nav-contacts svg {
+    fill: rgba(117, 117, 117, 1);
+}
+
 .nav-item5:hover svg {
     fill: #2196F3;
-    stroke:#2196F3 ;
 }
 
 .nav-item5:hover a {
@@ -113,7 +116,6 @@ nav a{
 
 .nav-item4:hover svg {
     fill: #2196F3;
-    stroke:#2196F3 ;
 }
 
 .nav-item4:hover a {
@@ -208,7 +210,6 @@ main h1 {
     width: 20px ;
     height: 20px;
     fill: rgba(175, 177, 184, 1);
-    stroke: rgba(175, 177, 184, 1);
 }
 
 
@@ -225,7 +226,6 @@ main h1 {
 .container-for-svgs:hover svg {
     background-color:#2196F3;
     fill: #FFF;
-    stroke: #FFF
 }
 
 
@@ -504,7 +504,6 @@ footer p {
         height: 20px;
         width: 20px;
         fill: #fff;
-        stroke: #fff;
     }
 
     .container-for-footer-svgs {
