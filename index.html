@@ -13,7 +13,7 @@
     <!-- Menu Bar -->
     <header class="global-header">
         <div class="menu-bar">
-            <a href="https://www.figma.com/file/TwjztGEkwMravGL9pPVt8l/Web-Studio-Homework-Project?type=design&node-id=1-293&mode=design&t=0eOfYrUTI4rjxHB8-0" target="_blank"><span class="logo"><span class="web-word">Web</span><span class="studio-word">Studio</span></a>
+            <a href="https://www.figma.com/file/TwjztGEkwMravGL9pPVt8l/Web-Studio-Homework-Project?type=design&node-id=1-293&mode=design&t=0eOfYrUTI4rjxHB8-0" target="_blank"><span class="logo"><span class="web-word">Web</span><span class="studio-word">Studio</span></span></a>
             <div class="main-navigation">
                 <nav >
                     <ul>
@@ -54,10 +54,10 @@
         <br>
             YOUR BUSINESS
         </h1>
-        <button class="main-button" type="button">Request our service</button>
+        <button class="main-button" data-modal-open type="button" >Request our service</button>
     </main>
         <!-- WHAT WE DO -->
-    <section class="section">
+    <section class="section main-web-section">
         <div class="web-main-explanations">
             <ul>
                 <li>
@@ -100,25 +100,41 @@
             </div>
     </section>
         
-    <section class="section">
-        <div class="what-we-do">
-            <h2>What we do</h2> 
-            <ul>
-                <li>
-                    <img class="box1" src="./images/box-1.jpg" alt="code writing" width="370" height="294">
-                    <img class="box2" src="./images/box-2.jpg" alt="checking phone" width="370" height="294">
-                    <img class="box3" src="./images/box-3.jpg" alt="checking tablet" width="370" height="294">
-                </li>
-            </ul>
-        </div>
+    <section class="section what-we-do-section">
+        <h2>What we do</h2>
+        <ul>
+            <li>
+                <div class="what-we-do">
+                    <div class="relative-images">
+                        <img class="box1" src="./images/box-1.jpg" alt="code writing" width="370" height="294">
+                        <div class="fixed-descriptions">
+                            <p>DESKTOP APPS</p>
+                        </div> 
+                    </div >
+                    <div class="relative-images">
+                        <img class="box2" src="./images/box-2.jpg" alt="checking phone" width="370" height="294">
+                        <div class="fixed-descriptions">
+                            <p>Mobile apps</p>
+                        </div> 
+                    </div>
+                    <div class="relative-images">
+                        <img class="box3" src="./images/box-3.jpg" alt="checking tablet" width="370" height="294">
+                        <div class="fixed-descriptions">
+                            <p>Design solutions</p>
+                        </div> 
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
     </section>
             
 
 
 
         <!-- OUR TEAM -->
-        <section>
-            <div class="our-team">
+        <section >
+            <div class="section our-team">
                 <h2>Our Team</h2>
                 <div class="our-team-photos">>
                     <ul>
@@ -251,7 +267,7 @@
             </div>
             
         </section>
-        <section class="section">
+        <section class="section customer-section">
             <div class="customers">
                 <h2>Regular Customers</h2>
                 <div class="customers-container">
@@ -338,5 +354,28 @@
     </footer>
 
 
+    <div class="modal is-hidden" data-modal>
+        <div class="modal-content">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+    
+          <button class="close-btn" data-modal-close>
+            <svg>
+                <use href=".//images/icons.svg#icon-close-btn"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <script src="./js/modal.js"></script>
+
 </body>
 </html>
+
+
+
+
